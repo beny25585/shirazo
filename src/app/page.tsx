@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Mail, MessageCircle, Play } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 
 export default function Component() {
   const [activeTab, setActiveTab] = useState("Home");
@@ -84,7 +84,6 @@ export default function Component() {
             </div>
           </TabsContent>
 
-          
           <TabsContent value="Projects" className="space-y-6">
             {/* Projects Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
