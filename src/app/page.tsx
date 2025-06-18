@@ -30,22 +30,22 @@ export default function Component() {
           onValueChange={setActiveTab}
           className="w-full max-w-4xl"
         >
-          <TabsList className="grid w-full grid-cols-3 bg-gray-300 rounded-lg p-1 shadow-md border border-gray-400">
+          <TabsList className="grid w-fit md:w-full grid-cols-3 bg-gray-300 rounded-lg  shadow-md border border-gray-400">
             <TabsTrigger
               value="projects"
-              className="data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200 rounded-md px-4 py-2 text-center"
+              className="h-10 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200 rounded-md px-4 py-2 text-center m-1"
             >
               Projects
             </TabsTrigger>
             <TabsTrigger
               value="about"
-              className="data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200 rounded-md px-4 py-2 text-center"
+              className="h-10 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200 rounded-md px-4 py-2 text-center m-1"
             >
               About Us
             </TabsTrigger>
             <TabsTrigger
               value="students"
-              className="data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200 rounded-md px-4 py-2 text-center"
+              className="h-10 w-full data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200 rounded-md px-4 py-2 text-center m-1"
             >
               Students
             </TabsTrigger>
@@ -228,10 +228,12 @@ export default function Component() {
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   <Card>
                     <CardContent className="p-6">
-                      <h3 className="font-semibold mb-3">REVIT Fundamentals</h3>
+                      <h3 className="font-semibold mb-3">
+                        mentoring architecture final projects
+                      </h3>
                       <p className="text-sm text-gray-600 mb-4">
                         Master the basics of REVIT with hands-on projects and
                         real-world applications.
@@ -248,7 +250,23 @@ export default function Component() {
 
                   <Card>
                     <CardContent className="p-6">
-                      <h3 className="font-semibold mb-3">Advanced Modeling</h3>
+                      <h3 className="font-semibold mb-3">Autocad curses</h3>
+                      <p className="text-sm text-gray-600 mb-4">
+                        Take your REVIT skills to the next level with complex
+                        modeling techniques.
+                      </p>
+                      <Image
+                        src="/placeholder.svg?height=150&width=250"
+                        alt="Advanced REVIT"
+                        width={250}
+                        height={150}
+                        className="w-full h-32 object-cover rounded"
+                      />
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardContent className="p-6">
+                      <h3 className="font-semibold mb-3"> ⁠lumion curses</h3>
                       <p className="text-sm text-gray-600 mb-4">
                         Take your REVIT skills to the next level with complex
                         modeling techniques.
