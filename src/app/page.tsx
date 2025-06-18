@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Mail, MessageCircle, Play } from "lucide-react";
 
 export default function Component() {
-  const [activeTab, setActiveTab] = useState("projects");
+  const [activeTab, setActiveTab] = useState("Home");
 
   return (
     <div className="min-h-screen bg-white">
@@ -32,20 +32,20 @@ export default function Component() {
         >
           <TabsList className="grid w-fit md:w-full grid-cols-3 bg-gray-300 rounded-lg  shadow-md border border-gray-400">
             <TabsTrigger
-              value="projects"
-              className="h-10 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200 rounded-md px-4 py-2 text-center m-1"
+              value="Home"
+              className="h-10 data-[state=active]:bg-[rgba(178,176,150,0.9)] data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200 rounded-md px-4 py-2 text-center m-1"
             >
-              Projects
+              Home
             </TabsTrigger>
             <TabsTrigger
               value="about"
-              className="h-10 data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200 rounded-md px-4 py-2 text-center m-1"
+              className="h-10 data-[state=active]:bg-[rgba(178,176,150,0.9)] data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200 rounded-md px-4 py-2 text-center m-1"
             >
               About Us
             </TabsTrigger>
             <TabsTrigger
               value="students"
-              className="h-10 w-full data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200 rounded-md px-4 py-2 text-center m-1"
+              className="h-10 w-full data-[state=active]:bg-[rgba(178,176,150,0.9)] data-[state=active]:text-white data-[state=active]:shadow-lg data-[state=active]:font-semibold text-gray-700 hover:bg-gray-200 transition-all duration-200 rounded-md px-4 py-2 text-center m-1"
             >
               Students
             </TabsTrigger>
@@ -53,7 +53,7 @@ export default function Component() {
 
           {/* Main Content Area */}
           <div className="mt-8">
-            <TabsContent value="projects" className="space-y-6">
+            <TabsContent value="Home" className="space-y-6">
               {/* Video Section */}
               <div className="bg-sage-100 rounded-lg p-8 mb-8">
                 <div className="aspect-video bg-white rounded-lg flex items-center justify-center shadow-sm">
