@@ -1,6 +1,6 @@
 "use client";
 
-
+import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,7 +15,7 @@ export default function Component() {
       {/* Header */}
       <header className="flex flex-col items-center py-8 px-4 bg-gradient-to-b from-gray-200 via-gray-100 to-white">
         <div className="mb-6">
-          <img
+          <Image
             src="/images/SHIRZO_logo.png"
             alt="SHIRAZO Architecture House"
             width={220}
@@ -72,7 +72,7 @@ export default function Component() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Card className="overflow-hidden">
                   <CardContent className="p-0">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=200&width=300"
                       alt="Modern Living Room"
                       width={300}
@@ -93,7 +93,7 @@ export default function Component() {
 
                 <Card className="overflow-hidden">
                   <CardContent className="p-0">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=200&width=300"
                       alt="Kitchen Design"
                       width={300}
@@ -112,7 +112,7 @@ export default function Component() {
 
                 <Card className="overflow-hidden">
                   <CardContent className="p-0">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=200&width=300"
                       alt="Bedroom Design"
                       width={300}
@@ -175,7 +175,7 @@ export default function Component() {
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <img
+                  <Image
                     src="/placeholder.svg?height=300&width=400"
                     alt="Shirazo Studio"
                     width={400}
@@ -236,7 +236,7 @@ export default function Component() {
                         Master the basics of REVIT with hands-on projects and
                         real-world applications.
                       </p>
-                      <img
+                      <Image
                         src="/placeholder.svg?height=150&width=250"
                         alt="REVIT Course"
                         width={250}
@@ -253,7 +253,7 @@ export default function Component() {
                         Take your REVIT skills to the next level with complex
                         modeling techniques.
                       </p>
-                      <img
+                      <Image
                         src="/placeholder.svg?height=150&width=250"
                         alt="Advanced REVIT"
                         width={250}
@@ -270,9 +270,9 @@ export default function Component() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="bg-white p-4 rounded">
                       <p className="text-sm text-gray-600 italic mb-2">
-                        "The REVIT course transformed my architectural workflow.
-                        The hands-on approach made complex concepts easy to
-                        understand."
+                        &ldquo;The REVIT course transformed my architectural
+                        workflow. The hands-on approach made complex concepts
+                        easy to understand.&rdquo;
                       </p>
                       <p className="text-sm font-medium">
                         - Sarah M., Architecture Student
@@ -280,8 +280,9 @@ export default function Component() {
                     </div>
                     <div className="bg-white p-4 rounded">
                       <p className="text-sm text-gray-600 italic mb-2">
-                        "Excellent instruction and practical projects. I now
-                        feel confident using REVIT in my professional work."
+                        &ldquo;Excellent instruction and practical projects. I
+                        now feel confident using REVIT in my professional
+                        work.&rdquo;
                       </p>
                       <p className="text-sm font-medium">
                         - David L., Interior Designer
@@ -313,7 +314,7 @@ export default function Component() {
             </Button>
           </div>
           <p className="text-sm text-gray-600 mt-4">
-            Ready to transform your space? Let's discuss your project.
+            Ready to transform your space? Let&apos;s discuss your project.
           </p>
         </div>
       </footer>
