@@ -89,14 +89,10 @@ export default function Component() {
                   {
                     id: 1,
                     title: "TLV Music Studies Center",
-                    shortDescription:
-                      "Contemporary design with clean lines and natural materials",
                     fullDescription:
-                      "An advanced music learning center in Tel Aviv that combines contemporary design with natural materials. The project includes recording studios, classrooms, and public spaces open to the community.",
+                      "A contemporary learning hub with clean lines, transparent geometry, and natural materials — designed to harmonize sound, space, and community",
                     location: "Tel Aviv, Israel",
-                    year: "2024",
-                    client: "Tel Aviv Municipality",
-                    area: "2,500 sqm",
+                    area: "950 sqm",
                     images: [
                       "/images/TLV Music studies center/2.jpg",
                       "/images/TLV Music studies center/3.jpg",
@@ -107,13 +103,9 @@ export default function Component() {
                   {
                     id: 2,
                     title: "synagouge  Racevet street Jerusalem",
-                    shortDescription:
-                      "Functional and elegant kitchen design with premium finishes",
                     fullDescription:
-                      "A state-of-the-art kitchen design that combines luxury with functionality.",
+                      "A refined geometric design featuring natural light and timeless antique marble",
                     location: "Jerusalem, Israel",
-                    year: "2023",
-                    client: "Private Residence",
                     area: "45 sqm",
                     images: [
                       "/images/synagouge  Racevet street Jerusalem/חוץ 3.jpg",
@@ -124,14 +116,10 @@ export default function Component() {
                   {
                     id: 3,
                     title: "Sygnature rest ramat gan",
-                    shortDescription:
-                      "Peaceful retreat with thoughtful lighting and textures",
                     fullDescription:
-                      "A bedroom design focused on creating a peaceful sanctuary.",
+                      "28th Floor Restaurant A modern dining space featuring bold textures, mirrored surfaces, and panoramic views of skyscrapers.",
                     location: "ramat gan, Israel",
-                    year: "2023",
-                    client: "Private Residence",
-                    area: "25 sqm",
+                    area: "120 sqm",
                     images: [
                       "/images/Sygnature rest ramat gan/1.jpg",
                       "/images/Sygnature rest ramat gan/2.jpg",
@@ -141,32 +129,24 @@ export default function Component() {
                   },
                   {
                     id: 4,
-                    title: "Broshim dorms",
-                    shortDescription:
-                      "Peaceful retreat with thoughtful lighting and textures",
+                    title: "ficusim dorms",
                     fullDescription:
-                      "A bedroom design focused on creating a peaceful sanctuary.",
+                      "The ficusim dorms is a Shenkar College Student Residences that  combine comfort and functional student apartments, shared work and study spaces, and an on-site art gallery showcasing student creations—offering a seamless and inspiring living experience",
                     location: "ramat gan, Israel",
-                    year: "2023",
-                    client: "Private Residence",
-                    area: "25 sqm",
+                    area: "1100 sqm",
                     images: [
-                      "/images/Broshim dorms/1.jpg",
-                      "/images/Broshim dorms/p1.jpg",
-                      "/images/Broshim dorms/p3.jpg",
+                      "/images/ficusim dorms/1.jpg",
+                      "/images/ficusim dorms/p1.jpg",
+                      "/images/ficusim dorms/p3.jpg",
                     ],
                   },
                   {
                     id: 5,
                     title: "Beit -el winery",
-                    shortDescription:
-                      "Peaceful retreat with thoughtful lighting and textures",
                     fullDescription:
-                      "A bedroom design focused on creating a peaceful sanctuary.",
+                      "A handcrafted stone winery with arched openings and timeless charm — where tradition, material, and atmosphere come together.",
                     location: "ramat gan, Israel",
-                    year: "2023",
-                    client: "Private Residence",
-                    area: "25 sqm",
+                    area: "950 sqm",
                     images: [
                       "/images/Beit -el winery/1.jpg",
                       "/images/Beit -el winery/עיצוב פנים 3.jpg",
@@ -175,14 +155,10 @@ export default function Component() {
                   {
                     id: 6,
                     title: "academic center- Hemdat - ODEM BIULDING",
-                    shortDescription:
-                      "Peaceful retreat with thoughtful lighting and textures",
                     fullDescription:
-                      "A bedroom design focused on creating a peaceful sanctuary.",
-                    location: "ramat gan, Israel",
-                    year: "2023",
-                    client: "Private Residence",
-                    area: "25 sqm",
+                      "A modern, stylish building for Hemdat HaDarom College, featuring state-of-the-art classrooms and offices designed to foster innovation, collaboration, and a professional academic environment",
+                    location: "netivot, Israel",
+                    area: "900 sqm",
                     images: [
                       "/images/academic center- Hemdat - ODEM BIULDING/WhatsApp Image 2024-11-15 at 10.02.22.jpeg",
                       "/images/academic center- Hemdat - ODEM BIULDING/WhatsApp Image 2024-11-15 at 10.02.23 (1).jpeg",
@@ -206,16 +182,23 @@ export default function Component() {
           </TabsContent>
 
           <TabsContent value="about" className="space-y-6">
-            {/* Video Section */}
             <div className="bg-sage-100 rounded-lg p-8 mb-8">
-              <div className="aspect-video bg-white rounded-lg flex items-center justify-center shadow-sm">
-                <video
-                  className="w-full h-full object-cover"
-                  src="/video/BALI.mp4"
-                  autoPlay
-                  loop
-                  muted
-                />
+              <div className="relative flex justify-center">
+                <div className="relative z-10 aspect-[9/16] bg-white rounded-lg shadow-sm overflow-hidden max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+                  <video
+                    className="w-full h-full"
+                    style={{
+                      objectFit: "cover",
+                      height: "140%",
+                      marginTop: "-30%",
+                      objectPosition: "center center",
+                    }}
+                    src="/video/villa Karma.mp4"
+                    autoPlay
+                    loop
+                    muted
+                  />
+                </div>
               </div>
             </div>
 
@@ -249,7 +232,7 @@ export default function Component() {
               </div>
               <div className="space-y-4">
                 <Image
-                  src="/placeholder.svg?height=300&width=400"
+                  src="/images/About-Us.jpg"
                   alt="Shirazo Studio"
                   width={400}
                   height={300}
@@ -290,27 +273,32 @@ export default function Component() {
             <div className="space-y-8">
               <div className="text-center">
                 <h2 className="text-2xl font-semibold mb-4">
-                  REVIT Courses & Student Work
+                  Student Mentoring
                 </h2>
                 <p className="text-gray-600 max-w-2xl mx-auto">
-                  Empowering the next generation of architects and designers
-                  through comprehensive REVIT training and mentorship programs.
+                  Helping Architecture Students Succeed From essential software
+                  courses like AutoCAD and Lumion to one-on-one mentoring for
+                  final projects – I’m here to support you every step of the
+                  way. With over 70 student projects successfully guided, I
+                  offer practical, creative, and focused help tailored to your
+                  needs. Let’s make your project shine
                 </p>
               </div>
+              <div>go to action</div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Card>
                   <CardContent className="p-6">
                     <h3 className="font-semibold mb-3">
-                      mentoring architecture final projects
+                      Final Project Mentoring
                     </h3>
                     <p className="text-sm text-gray-600 mb-4">
-                      Master the basics of REVIT with hands-on projects and
-                      real-world applications.
+                      One-on-one guidance to help you refine your concept,
+                      design smart, and present like a pro
                     </p>
                     <Image
-                      src="/placeholder.svg?height=150&width=250"
-                      alt="REVIT Course"
+                      src="/images/Final Project Mentoring.jpg"
+                      alt="Final Project Mentoring"
                       width={250}
                       height={150}
                       className="w-full h-32 object-cover rounded"
@@ -320,14 +308,16 @@ export default function Component() {
 
                 <Card>
                   <CardContent className="p-6">
-                    <h3 className="font-semibold mb-3">Autocad curses</h3>
+                    <h3 className="font-semibold mb-3">
+                      AutoCAD Course for Students
+                    </h3>
                     <p className="text-sm text-gray-600 mb-4">
-                      Take your REVIT skills to the next level with complex
-                      modeling techniques.
+                      Get confident with 2D drafting, layers, and layouts –
+                      everything you need to nail your studio projects
                     </p>
                     <Image
-                      src="/placeholder.svg?height=150&width=250"
-                      alt="Advanced REVIT"
+                      src="/images/AutoCad.jpg"
+                      alt="AutoCAD Course for Students"
                       width={250}
                       height={150}
                       className="w-full h-32 object-cover rounded"
@@ -336,46 +326,20 @@ export default function Component() {
                 </Card>
                 <Card>
                   <CardContent className="p-6">
-                    <h3 className="font-semibold mb-3"> ⁠lumion curses</h3>
+                    <h3 className="font-semibold mb-3"> Lumion Course</h3>
                     <p className="text-sm text-gray-600 mb-4">
-                      Take your REVIT skills to the next level with complex
-                      modeling techniques.
+                      Learn to bring your designs to life with fast, fun, and
+                      powerful 3D rendering – no experience needed
                     </p>
                     <Image
-                      src="/placeholder.svg?height=150&width=250"
-                      alt="Advanced REVIT"
+                      src="/images/lumion-course.jpg"
+                      alt="Lumion Course"
                       width={250}
                       height={150}
                       className="w-full h-32 object-cover rounded"
                     />
                   </CardContent>
                 </Card>
-              </div>
-
-              {/* Student Testimonials */}
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h3 className="font-semibold mb-4">Student Success</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-white p-4 rounded">
-                    <p className="text-sm text-gray-600 italic mb-2">
-                      &ldquo;The REVIT course transformed my architectural
-                      workflow. The hands-on approach made complex concepts easy
-                      to understand.&rdquo;
-                    </p>
-                    <p className="text-sm font-medium">
-                      - Sarah M., Architecture Student
-                    </p>
-                  </div>
-                  <div className="bg-white p-4 rounded">
-                    <p className="text-sm text-gray-600 italic mb-2">
-                      &ldquo;Excellent instruction and practical projects. I now
-                      feel confident using REVIT in my professional work.&rdquo;
-                    </p>
-                    <p className="text-sm font-medium">
-                      - David L., Interior Designer
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
           </TabsContent>
@@ -387,13 +351,27 @@ export default function Component() {
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="font-semibold mb-4">Get In Touch</h3>
           <div className="flex justify-center gap-4">
-            <Button variant="outline" className="flex items-center gap-2">
+            <Button
+              variant="outline"
+              className="flex items-center gap-2"
+              onClick={() =>
+                window.open("mailto:Shiira1998@gmail.com", "_blank")
+              }
+            >
               <Mail className="w-4 h-4" />
               <span>Email Me</span>
             </Button>
             <Button
               variant="outline"
               className="flex items-center gap-2 bg-green-50 hover:bg-green-100"
+              onClick={() => {
+                const message =
+                  "היי, ראיתי את השירותים לסטודנטים ורציתי לתאם שיעור";
+                const whatsappUrl = `https://wa.me/972504403017?text=${encodeURIComponent(
+                  message
+                )}`;
+                window.open(whatsappUrl, "_blank");
+              }}
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp</span>

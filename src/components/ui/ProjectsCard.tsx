@@ -3,19 +3,14 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
-  Calendar,
   MapPin,
-  User,
 } from "lucide-react";
 
 export interface Project {
   id: number;
   title: string;
-  shortDescription: string;
   fullDescription: string;
   location: string;
-  year: string;
-  client: string;
   area: string;
   images: string[];
   additionalContent?: React.ReactNode;
@@ -74,7 +69,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
               alt={project.title}
               className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+            <div className="absolute inset-0 bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
               <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
                 <div className="text-lg font-medium">View Project</div>
                 <div className="text-sm">{project.images.length} Images</div>
@@ -83,14 +78,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
           </div>
           <div className="p-4">
             <h3 className="font-semibold mb-2 text-lg">{project.title}</h3>
-            <p className="text-sm text-gray-600 mb-2">
-              {project.shortDescription}
-            </p>
             <div className="flex items-center text-xs text-gray-500 gap-4">
-              <div className="flex items-center gap-1">
-                <Calendar size={12} />
-                {project.year}
-              </div>
               <div className="flex items-center gap-1">
                 <MapPin size={12} />
                 {project.location.split(",")[0]}
@@ -163,13 +151,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
                   <div className="bg-gray-50 p-6 rounded-lg h-fit">
                     <h3 className="font-bold text-lg mb-4">Project Details</h3>
                     <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <Calendar className="text-gray-500 mt-1" size={16} />
-                        <div>
-                          <div className="font-medium">Year</div>
-                          <div className="text-gray-600">{project.year}</div>
-                        </div>
-                      </div>
+                      <div className="flex items-start gap-3"></div>
                       <div className="flex items-start gap-3">
                         <MapPin className="text-gray-500 mt-1" size={16} />
                         <div>
@@ -177,13 +159,6 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
                           <div className="text-gray-600">
                             {project.location}
                           </div>
-                        </div>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <User className="text-gray-500 mt-1" size={16} />
-                        <div>
-                          <div className="font-medium">Client</div>
-                          <div className="text-gray-600">{project.client}</div>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
