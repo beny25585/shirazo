@@ -284,7 +284,6 @@ export default function Component() {
                   needs. Let’s make your project shine
                 </p>
               </div>
-              <div>go to action</div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Card>
