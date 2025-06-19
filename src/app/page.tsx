@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Mail, MessageCircle } from "lucide-react";
+import ProjectsCard, { Project } from "../components/ui/ProjectsCard";
 
 export default function Component() {
   const [activeTab, setActiveTab] = useState("Home");
@@ -61,10 +62,6 @@ export default function Component() {
             <div className="mt-8">
               <div className="bg-sage-100 rounded-lg p-8 mb-8">
                 <div className="relative flex justify-center">
-                  {/* המלבן הבז' השוכב מאחורה - גדול יותר */}
-                  <div className="absolute bg-amber-300 rounded-xl w-screen left-1/2 transform -translate-x-1/2 top-1/4 h-80 md:h-96 lg:h-[28rem] z-0"></div>
-
-                  {/* הסרטון */}
                   <div className="relative z-10 aspect-[9/16] bg-white rounded-lg shadow-sm overflow-hidden max-w-sm md:max-w-md lg:max-w-lg">
                     <video
                       className="w-full object-cover"
@@ -87,62 +84,124 @@ export default function Component() {
           <TabsContent value="Projects" className="space-y-6">
             {/* Projects Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <Card className="overflow-hidden">
-                <CardContent className="p-0">
-                  <Image
-                    src="/images/TLV Music studies center/2.jpg"
-                    alt="TLV Music studies center"
-                    width={300}
-                    height={200}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-4">
-                    <h3 className="font-semibold mb-2">
-                      TLV Music studies center
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      Contemporary design with clean lines and natural materials
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+              {(() => {
+                const projects: Project[] = [
+                  {
+                    id: 1,
+                    title: "TLV Music Studies Center",
+                    shortDescription:
+                      "Contemporary design with clean lines and natural materials",
+                    fullDescription:
+                      "An advanced music learning center in Tel Aviv that combines contemporary design with natural materials. The project includes recording studios, classrooms, and public spaces open to the community.",
+                    location: "Tel Aviv, Israel",
+                    year: "2024",
+                    client: "Tel Aviv Municipality",
+                    area: "2,500 sqm",
+                    images: [
+                      "/images/TLV Music studies center/2.jpg",
+                      "/images/TLV Music studies center/3.jpg",
+                      "/images/TLV Music studies center/7.jpg",
+                      "/images/TLV Music studies center/פנים 1.jpg",
+                    ],
+                  },
+                  {
+                    id: 2,
+                    title: "synagouge  Racevet street Jerusalem",
+                    shortDescription:
+                      "Functional and elegant kitchen design with premium finishes",
+                    fullDescription:
+                      "A state-of-the-art kitchen design that combines luxury with functionality.",
+                    location: "Jerusalem, Israel",
+                    year: "2023",
+                    client: "Private Residence",
+                    area: "45 sqm",
+                    images: [
+                      "/images/synagouge  Racevet street Jerusalem/חוץ 3.jpg",
+                      "/images/synagouge  Racevet street Jerusalem/חוץ 4.jpg",
+                      "/images/synagouge  Racevet street Jerusalem/פנים 2.jpg",
+                    ],
+                  },
+                  {
+                    id: 3,
+                    title: "Sygnature rest ramat gan",
+                    shortDescription:
+                      "Peaceful retreat with thoughtful lighting and textures",
+                    fullDescription:
+                      "A bedroom design focused on creating a peaceful sanctuary.",
+                    location: "ramat gan, Israel",
+                    year: "2023",
+                    client: "Private Residence",
+                    area: "25 sqm",
+                    images: [
+                      "/images/Sygnature rest ramat gan/1.jpg",
+                      "/images/Sygnature rest ramat gan/2.jpg",
+                      "/images/Sygnature rest ramat gan/3.jpg",
+                      "/images/Sygnature rest ramat gan/4.jpg",
+                    ],
+                  },
+                  {
+                    id: 4,
+                    title: "Broshim dorms",
+                    shortDescription:
+                      "Peaceful retreat with thoughtful lighting and textures",
+                    fullDescription:
+                      "A bedroom design focused on creating a peaceful sanctuary.",
+                    location: "ramat gan, Israel",
+                    year: "2023",
+                    client: "Private Residence",
+                    area: "25 sqm",
+                    images: [
+                      "/images/Broshim dorms/1.jpg",
+                      "/images/Broshim dorms/p1.jpg",
+                      "/images/Broshim dorms/p3.jpg",
+                    ],
+                  },
+                  {
+                    id: 5,
+                    title: "Beit -el winery",
+                    shortDescription:
+                      "Peaceful retreat with thoughtful lighting and textures",
+                    fullDescription:
+                      "A bedroom design focused on creating a peaceful sanctuary.",
+                    location: "ramat gan, Israel",
+                    year: "2023",
+                    client: "Private Residence",
+                    area: "25 sqm",
+                    images: [
+                      "/images/Beit -el winery/1.jpg",
+                      "/images/Beit -el winery/עיצוב פנים 3.jpg",
+                    ],
+                  },
+                  {
+                    id: 6,
+                    title: "academic center- Hemdat - ODEM BIULDING",
+                    shortDescription:
+                      "Peaceful retreat with thoughtful lighting and textures",
+                    fullDescription:
+                      "A bedroom design focused on creating a peaceful sanctuary.",
+                    location: "ramat gan, Israel",
+                    year: "2023",
+                    client: "Private Residence",
+                    area: "25 sqm",
+                    images: [
+                      "/images/academic center- Hemdat - ODEM BIULDING/WhatsApp Image 2024-11-15 at 10.02.22.jpeg",
+                      "/images/academic center- Hemdat - ODEM BIULDING/WhatsApp Image 2024-11-15 at 10.02.23 (1).jpeg",
+                      "/images/academic center- Hemdat - ODEM BIULDING/WhatsApp Image 2024-11-15 at 10.02.23 (2).jpeg",
+                      "/images/academic center- Hemdat - ODEM BIULDING/WhatsApp Image 2024-11-15 at 10.02.23.jpeg",
+                    ],
+                  },
+                ];
 
-              <Card className="overflow-hidden">
-                <CardContent className="p-0">
-                  <Image
-                    src="/placeholder.svg?height=200&width=300"
-                    alt="Kitchen Design"
-                    width={300}
-                    height={200}
-                    className="w-full h-48 object-cover"
+                return projects.map((project) => (
+                  <ProjectsCard
+                    key={project.id}
+                    project={project}
+                    onClick={(project) =>
+                      console.log("Project clicked:", project.title)
+                    }
                   />
-                  <div className="p-4">
-                    <h3 className="font-semibold mb-2">Luxury Kitchen</h3>
-                    <p className="text-sm text-gray-600">
-                      Functional and elegant kitchen design with premium
-                      finishes
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="overflow-hidden">
-                <CardContent className="p-0">
-                  <Image
-                    src="/placeholder.svg?height=200&width=300"
-                    alt="Bedroom Design"
-                    width={300}
-                    height={200}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-4">
-                    <h3 className="font-semibold mb-2">Serene Bedroom</h3>
-                    <p className="text-sm text-gray-600">
-                      Peaceful retreat with thoughtful lighting and textures
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+                ));
+              })()}
             </div>
           </TabsContent>
 
