@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "AutoCAD",
     "Lumion",
     "Israel",
+    "Tel Aviv architect",
+    "Jerusalem interior design",
+    "Israeli architecture studio",
   ],
   authors: [{ name: "Shirazo Studio" }],
   creator: "Shirazo Studio",
@@ -23,11 +26,11 @@ export const metadata: Metadata = {
     title: "Shirazo - Architecture & Interior Design Studio",
     description:
       "Professional architecture and interior design studio specializing in contemporary design, 3D visualization, and student mentoring.",
-    url: "https://shirazo.netlify.app",
+    url: "https://shirazoarchhouse.com",
     siteName: "Shirazo Studio",
     images: [
       {
-        url: "/images/SHIRZO_logo.png",
+        url: "https://shirazoarchhouse.com/images/SHIRZO_logo.png",
         width: 1200,
         height: 630,
         alt: "Shirazo Architecture Studio Logo",
@@ -41,7 +44,7 @@ export const metadata: Metadata = {
     title: "Shirazo - Architecture & Interior Design Studio",
     description:
       "Professional architecture and interior design studio specializing in contemporary design.",
-    images: ["/images/SHIRZO_logo.png"],
+    images: ["https://shirazoarchhouse.com/images/SHIRZO_logo.png"],
   },
   robots: {
     index: true,
