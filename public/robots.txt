@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shirazo.netlify.app/sitemap.xml
+Sitemap: https://shirazoarchhouse.com/sitemap.xml
