@@ -5,26 +5,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: 'https://shirazoarchhouse.com',
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: 'https://shirazoarchhouse.com/#Projects',
+      url: 'https://shirazoarchhouse.com/projects',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: 'https://shirazoarchhouse.com/#About',
+      url: 'https://shirazoarchhouse.com/about',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: 'https://shirazoarchhouse.com/#students',
+      url: 'https://shirazoarchhouse.com/students',
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.6,
     },
   ]
 }
