@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  X,
-  ChevronLeft,
-  ChevronRight,
-  MapPin,
-} from "lucide-react";
+import { X, ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 
 export interface Project {
   id: number;

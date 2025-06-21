@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-
-
 export const metadata: Metadata = {
   title: "Shirazo - Architecture & Interior Design Studio",
   description:
@@ -18,6 +16,10 @@ export const metadata: Metadata = {
     "Tel Aviv architect",
     "Jerusalem interior design",
     "Israeli architecture studio",
+    "https://shirazoarchhouse.com/",
+    "shirazoarchhouse",
+    "shirazo",
+    "shirazo architecture",
   ],
   authors: [{ name: "Shirazo Studio" }],
   creator: "Shirazo Studio",
